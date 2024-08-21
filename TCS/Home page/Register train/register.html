@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Train - Train Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register a New Train</h2>
+        <form id="registerTrainForm">
+            <label for="trainNumber">Train Number:</label>
+            <input type="text" id="trainNumber" name="trainNumber" required>
+
+            <label for="trainID">Train ID:</label>
+            <input type="text" id="trainID" name="trainID" required>
+
+            <label for="trainName">Train Name:</label>
+            <input type="text" id="trainName" name="trainName" required>
+
+            <label for="sourceStation">Source Station:</label>
+            <input type="text" id="sourceStation" name="sourceStation" required>
+
+            <label for="destinationStation">Destination Station:</label>
+            <input type="text" id="destinationStation" name="destinationStation" required>
+
+            <label for="departureTime">Departure Time:</label>
+            <input type="time" id="departureTime" name="departureTime" required>
+
+            <label for="arrivalTime">Arrival Time:</label>
+            <input type="time" id="arrivalTime" name="arrivalTime" required>
+
+            <label for="ticketCategories">Ticket Categories:</label>
+            <textarea id="ticketCategories" name="ticketCategories" rows="4" required placeholder="List categories, e.g., AC Tier 1, AC Tier 2, General"></textarea>
+
+            <button type="submit">Register Train</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Train Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="book ticket/book.html">Book Ticket</a></li>
+            <li><a href="view ticket/view.html">View Ticket</a></li>
+            <li><a href="update details/update.html">Update Details</a></li>
+            <li><a href="Register train/register.html">Register a Train</a></li>
+            <li><a href="Profile/profile.html">User Profile</a></li>
+            <li class="logout"><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to the Train Ticketing System</h1>
+
+        <!-- Table Aggregate Section -->
+        <section class="aggregate-section">
+            <h2>Ticket Booking Aggregates</h2>
+
+            <!-- Tickets Booked Per Class -->
+            <div class="aggregate-container">
+                <h3>Number of Tickets Booked Per Class</h3>
+                <table id="ticketsBookedTable">
+                    <thead>
+                        <tr>
+                            <th>Ticket Class</th>
+                            <th>Number of Tickets</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic Content Here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sales Per Quarter -->
+            <div class="aggregate-container">
+                <h3>Sales Done Per Quarter</h3>
+                <table id="salesPerQuarterTable">
+                    <thead>
+                        <tr>
+                            <th>Quarter</th>
+                            <th>Sales Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Dynamic Content Here-->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

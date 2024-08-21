@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Ticket - Train Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="ticket" id="ticket">
+            <h2>Train Ticket</h2>
+            <div class="ticket-info">
+                <p><strong>Ticket ID:</strong> <span id="ticketID"></span></p>
+                <p><strong>Train Number:</strong> <span id="trainNumber"></span></p>
+                <p><strong>Train ID:</strong> <span id="trainID"></span></p>
+                <p><strong>User ID:</strong> <span id="userID"></span></p>
+                <p><strong>Username:</strong> <span id="username"></span></p>
+                <p><strong>Boarding Station:</strong> <span id="boardingStation"></span></p>
+                <p><strong>Boarding Time:</strong> <span id="boardingTime"></span></p>
+                <p><strong>Arrival Time:</strong> <span id="arrivalTime"></span></p>
+                <p><strong>Number of Tickets:</strong> <span id="numberOfTickets"></span></p>
+            </div>
+            <button class="cancel-btn" onclick="confirmCancellation()">Cancel Ticket</button>
+        </div>
+    </div>
+
+    <!-- Modal for Cancellation Confirmation -->
+    <div id="cancelModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Cancel Ticket</h3>
+            <p>Are you sure you want to cancel this ticket?</p>
+            <p><strong>Cancellation Fee:</strong> $50</p>
+            <button class="confirm-btn" onclick="processCancellation()">Yes, Cancel</button>
+            <button class="cancel-btn" onclick="closeModal()">No, Go Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
